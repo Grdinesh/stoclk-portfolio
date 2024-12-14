@@ -1,0 +1,134 @@
+/* Modern color scheme and base styles */
+:root {
+    --primary-color: #2563eb;
+    --primary-light: #3b82f6;
+    --primary-dark: #1d4ed8;
+    --success-color: #22c55e;
+    --danger-color: #ef4444;
+    --background: #f8fafc;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  
+  body {
+    background: var(--background) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-primary);
+    line-height: 1.5;
+  }
+  
+  /* Modern card design */
+  .box {
+    padding: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    background: #ffffff;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+  
+  /* Enhanced typography */
+  .box h3 {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Modern input styling */
+  .ant-input-number {
+    border-radius: 0.5rem;
+    border: 2px solid #e2e8f0;
+    transition: all 0.2s ease;
+  }
+  
+  .ant-input-number:hover {
+    border-color: var(--primary-light);
+  }
+  
+  .ant-input-number:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  }
+  
+  /* Enhanced button styling */
+  .ant-btn {
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    padding: 0 1.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .ant-btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  .ant-btn-primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-1px);
+  }
+  
+  /* Modern stock card design */
+  .stockCard {
+    border-radius: 1rem;
+    border: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .stockCard.ant-card {
+    background: white;
+  }
+  
+  .stockCard .ant-card-head {
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1rem;
+  }
+  
+  .stockCard .ant-card-body {
+    padding: 1.5rem;
+  }
+  
+  /* Positive/Negative card states */
+  .positive {
+    box-shadow: 0 4px 6px -1px rgba(34, 197, 94, 0.1);
+  }
+  
+  .negative {
+    box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.1);
+  }
+  
+  /* Enhanced Steps component */
+  .ant-steps-item-title {
+    font-weight: 500;
+    color: var(--text-primary) !important;
+  }
+  
+  .ant-steps-item-description {
+    color: var(--text-secondary) !important;
+  }
+  
+  /* Market overview widget container */
+  #rohit {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+  }
+  
+  /* Footer style */
+  footer {
+    background: #1e293b;
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
